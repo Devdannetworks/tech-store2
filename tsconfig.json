@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Transpiles to ES5, which is good for compatibility
+    "lib": ["dom", "dom.iterable", "esnext"], // Includes necessary libraries
+    "allowJs": true, // Allows JavaScript files in the project
+    "skipLibCheck": true, // Skips type checking of declaration files for faster builds
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "strict": true, // Enables all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensures file name casing consistency
+    "noFallthroughCasesInSwitch": true, // Disallows fallthrough in switch statements
+    "module": "commonjs", // Use CommonJS module system
+    "moduleResolution": "node", // Uses Node's module resolution algorithm
+    "resolveJsonModule": true, // Allows importing JSON modules
+    "isolatedModules": true, // Ensures each file can be transpiled individually
+    "noEmit": true, // Prevents emitting compiled JavaScript files
+    "jsx": "react-jsx" // Use React's JSX transform
+    // Uncomment this line if you need to specify custom type roots
+    // "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": [
+    "src", // Includes your source files
+    "functions/types", // Includes custom type declarations
+    "server.js", // Includes your server script if needed
+    "src/Firebase"
+  ]
+}
